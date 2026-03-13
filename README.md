@@ -1,1 +1,169 @@
+# Servidor Node.js - API de Usuários
 
+API simples desenvolvida com **Node.js** e **Express** para praticar conceitos de backend, organização em camadas e criação de rotas HTTP.
+
+O projeto segue uma arquitetura inspirada em aplicações reais, separando responsabilidades em **Controller, Service e Repository**.
+
+---
+
+## Objetivo do Projeto
+
+Este projeto foi desenvolvido com o objetivo de praticar:
+
+- Criação de servidores com Node.js
+- Construção de APIs com Express
+- Organização de código em camadas
+- Manipulação de rotas HTTP
+- Estrutura semelhante a aplicações backend reais
+
+---
+
+## Estrutura do Projeto
+
+```
+servidor-node
+│
+└── src
+    │
+    ├── controllers
+    │     controller.js
+    │
+    ├── services
+    │     service.js
+    │
+    ├── repository
+    │     bd.json
+    │
+    └── server
+          server.js
+```
+
+### Controller
+Responsável por receber as requisições HTTP e enviar as respostas.
+
+### Service
+Contém a lógica da aplicação e o processamento das informações.
+
+### Repository
+Simula um banco de dados utilizando um arquivo JSON.
+
+### Server
+Responsável por iniciar o servidor e definir a porta da aplicação.
+
+---
+
+## Tecnologias Utilizadas
+
+- Node.js
+- Express
+- JavaScript
+- JSON
+
+---
+
+## Rotas da API
+
+### Listar usuários
+
+```
+GET /usuario
+```
+
+Retorna todos os usuários cadastrados.
+
+---
+
+### Adicionar usuário
+
+```
+POST /usuario
+```
+
+Body:
+
+```json
+{
+  "id": "3",
+  "nome": "Ana",
+  "rg": "12345678"
+}
+```
+
+---
+
+### Rota de teste
+
+```
+GET /site
+```
+
+Retorna uma mensagem simples do servidor.
+
+---
+
+### Cálculo
+
+```
+GET /calculo/:valor
+```
+
+Recebe um valor na URL e retorna o quadrado desse número.
+
+Exemplo:
+
+```
+/calculo/5
+```
+
+Resposta:
+
+```
+25
+```
+
+---
+
+## Como Executar o Projeto
+
+1️⃣ Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/servidor-node.git
+```
+
+2️⃣ Instale as dependências
+
+```bash
+npm install
+```
+
+3️⃣ Inicie o servidor
+
+```bash
+node src/server/server.js
+```
+
+4️⃣ O servidor estará rodando em:
+
+```
+http://localhost:3055
+```
+
+---
+
+## Aprendizados com o Projeto
+
+- Estruturação de APIs em Node.js
+- Uso do Express para criação de rotas
+- Separação de responsabilidades (Controller / Service / Repository)
+- Manipulação de parâmetros de rota
+- Organização de projetos backend
+
+---
+
+## Autor
+
+Ana Beatriz Freitas
+
+- GitHub: https://github.com/anaolr
+- LinkedIn: https://www.linkedin.com/in/anabeatriz-freitas/
